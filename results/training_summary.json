@@ -1,0 +1,84 @@
+{
+  "environment": "CarRacing-v2",
+  "algorithm": "PPO",
+  "policy": "CnnPolicy",
+  "seed": 42,
+  "n_envs": 4,
+  "hyperparameters": {
+    "learning_rate": "linear_schedule(3e-4 \u2192 0)",
+    "n_steps": 1024,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "frame_stack": 4
+  },
+  "total_timesteps_target": 2000000,
+  "training": {
+    "final_timesteps": 2002944,
+    "total_episodes": 2024,
+    "best_episode_reward": 920.0,
+    "worst_episode_reward": -84.08,
+    "mean_episode_reward": 163.84,
+    "final_mean_reward_last20": 198.25,
+    "milestones": [
+      {
+        "timestep": 200000,
+        "mean_reward": 331.14
+      },
+      {
+        "timestep": 400000,
+        "mean_reward": 333.12
+      },
+      {
+        "timestep": 600000,
+        "mean_reward": 135.18
+      },
+      {
+        "timestep": 800000,
+        "mean_reward": 433.21
+      },
+      {
+        "timestep": 1000000,
+        "mean_reward": 139.09
+      },
+      {
+        "timestep": 1200000,
+        "mean_reward": 115.0
+      },
+      {
+        "timestep": 1400000,
+        "mean_reward": 60.73
+      },
+      {
+        "timestep": 1600000,
+        "mean_reward": 172.06
+      },
+      {
+        "timestep": 1800000,
+        "mean_reward": 161.94
+      },
+      {
+        "timestep": 2000000,
+        "mean_reward": 207.23
+      }
+    ]
+  },
+  "evaluation": {
+    "best_mean_reward": 569.18,
+    "best_timestep": 350000,
+    "n_eval_episodes": 20,
+    "eval_frequency": 50000,
+    "mean_reward": 325.68,
+    "std_reward": 257.64,
+    "min_reward": 23.67,
+    "max_reward": 881.13,
+    "median_reward": 192.6,
+    "mean_episode_length": 932.8,
+    "model_evaluated": "models/best_model/best_model.zip",
+    "eval_seed": 100
+  }
+}

@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Logs
+logs/
+
+# Intermediate checkpoints
+models/checkpoints/
+
+# Jupyter
+.ipynb_checkpoints/
