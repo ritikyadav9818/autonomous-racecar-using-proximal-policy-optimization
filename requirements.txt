@@ -1,0 +1,13 @@
+stable-baselines3==2.3.2
+gymnasium[box2d]==0.29.1
+torch
+torchvision
+numpy==1.26.4
+matplotlib
+imageio[ffmpeg]
+Pillow
+opencv-python
+tensorflow
+tqdm
+rich
+pygame==2.5.2
